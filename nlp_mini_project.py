@@ -25,6 +25,7 @@ with open('dictionary.json', 'r') as fp:
   data = json.load(fp)
 
 clf = pickle.load(open('model.pkl', 'rb'))
+st.write('model loaded')
 
 def prediction(input):
     longest = 2875
