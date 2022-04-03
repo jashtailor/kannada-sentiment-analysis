@@ -45,7 +45,7 @@ def prediction(input):
       
 if st.button(label="Submit"):
   try:
-    prediction(input)
+    prediction(text)
   except:
     pass
 else:
