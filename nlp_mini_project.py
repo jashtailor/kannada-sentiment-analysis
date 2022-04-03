@@ -38,14 +38,21 @@ def prediction(input):
   lst7 = lst6.reshape(1, -1)
   a = clf.predict(lst7)
   # print(a)
+  '''
   if a==1:
     st.write('Positive Sentiment')
   elif a==0:
     st.write('Negative Sentiment')
+  '''
+  return (a)
       
 if st.button(label="Submit"):
   try:
-    prediction(text)
+    b = prediction(text)
+    if b==1:
+      st.write('Positive Sentiment')
+    elif b==0:
+      st.write('Negative Sentiment')
   except:
     pass
 else:
