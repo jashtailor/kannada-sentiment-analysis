@@ -46,7 +46,7 @@ def prediction(input):
     st.write('Negative Sentiment')
   '''
   return (a)
-      
+'''     
 if st.button(label="Submit"):
   try:
     b = prediction(text)
@@ -58,4 +58,11 @@ if st.button(label="Submit"):
     pass
 else:
   pass
-    
+'''
+
+if st.button(label='Submit'):
+  b = prediction(text)
+  if b==1:
+    st.write('Positive Sentiment')
+  elif b==0:
+    st.write('Negative Sentiment')
