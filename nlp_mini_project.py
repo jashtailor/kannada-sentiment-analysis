@@ -37,7 +37,7 @@ def prediction(input):
     lst6 = np.asarray(lst6, dtype=np.float64)
     lst7 = lst6.reshape(1, -1)
     a = clf.predict(lst7)
-    print(a)
+    # print(a)
     if a==1:
       st.write('Positive Sentiment')
     elif a==0:
