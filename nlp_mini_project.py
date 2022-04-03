@@ -33,9 +33,9 @@ def prediction(input):
   for each in lst5:
     lst6.append(data[each])
   if len(lst6)<longest:
-    lst6 = lst6 + ([0]*(longest-len(lst6)))
-  lst6 = np.asarray(lst6, dtype=np.float64)
-  lst7 = lst6.reshape(1, -1)
+    lst8 = lst6 + ([0]*(longest-len(lst6)))
+  lst9 = np.asarray(lst8, dtype=np.float64)
+  lst7 = lst9.reshape(1, -1)
   a = clf.predict(lst7)
   # print(a)
   st.write(a)
