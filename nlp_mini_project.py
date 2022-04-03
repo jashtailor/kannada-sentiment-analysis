@@ -38,6 +38,7 @@ def prediction(input):
   lst7 = lst6.reshape(1, -1)
   a = clf.predict(lst7)
   # print(a)
+  st.write(a)
   '''
   if a==1:
     st.write('Positive Sentiment')
