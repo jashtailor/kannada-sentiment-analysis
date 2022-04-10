@@ -48,7 +48,7 @@ def prediction(input):
     # print(a[0])
     if a[0]==1:
         st.write('Positive')
-    else:
+    elif a[0]==0:
         st.write('Negative')
     
 if st.button(label="Submit"):
