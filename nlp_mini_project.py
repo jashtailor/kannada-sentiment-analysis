@@ -52,9 +52,11 @@ def prediction(input):
         print('negative')
     
 if st.button(label="Submit"):
+  prediction(text)
+  '''
   try:
     prediction(text)
   except:
     pass
 else:
-  pass
+  pass'''
